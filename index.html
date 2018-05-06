@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Green Wall | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="commons.css">
+    <style>
+      #go-to-manager-button {
+        font-size: 22.5px;
+        width: 235px;
+        background-color: rgba(107, 121, 232, 1);
+        color: white;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nav'>
+      <div class="text-container">
+        <a class='button' id='help-button' href='#'>help?</a>
+        <p class="space"></p>
+        <p class="datetime">10:35:9132 PM</p>
+        <p class="space"></p>
+        <p class="datetime">April 24th, 2018</p>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <div id="contents">
+      <h1 id="title">Hi!</h1>
+      <p id="body">Welcome to your green wall controller! Here, you can adjust settings which affect the timing of various functions dedicated to the maintenance of your green wall. If you need some help, feel free to tap the "help" button at the top of every page. Head to your manager to get started.</p>
+      <br>
+      <a href="manager.html" class="button" id="go-to-manager-button">Go To Manager</a>
+    </div>
+  </body>
+  <script>
+    var helpButton = document.getElementById('help-button');
+    helpButton.addEventListener('click', function(event) {
+      alert("Hello again! If you're wondering how to start controlling your green wall, simply tap the button which says 'Go To Manager', and it will take to you a page filled with pins and their settings. Once you're there, tap the help button again, or you can try to understand the system yourself! For specific problems, contact the people who made me.");
+    });
+  </script>
+</html>

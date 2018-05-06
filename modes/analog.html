@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Green Wall | Analog Mode</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../commons.css">
+    <style>
+      .statement {
+        font-size: 25px;
+      } .control-button {
+        font-size: 20px;
+        color: white;
+        margin: 10px 0px;
+        width: 100px;
+        padding: 15px;
+      } #apply-button {
+        font-size: 17.5px;
+        color: white;
+        background-color: rgba(129, 177, 225, 1);
+        padding: 15px;
+        width: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nav'>
+      <div class="text-container">
+        <a class='button' id='help-button' href='#'>help?</a>
+        <p class="space"></p>
+        <p class="datetime">10:35:9132 PM</p>
+        <p class="space"></p>
+        <p class="datetime">April 24th, 2018</p>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <div id="contents">
+      <h1 id="title">Analog Mode</h1>
+      <p class="statement">Current State: <span class='colored-red'>Off</span></p>
+      <p class="statement">Current Pin: <span class="colored-green">19</span></p>
+      <br>
+      <p class="statement"><span class="colored-green">Min</span> Value: Turn <select style="font-size: 30px;"><option value="on">On</option><option value="off">Off</option></select> if value is <select style="font-size: 30px;"><option value="greater-than">Greater Than</option><option value="less-than">Less Than</option><option value="equal-to">Equal To</option><option value="not-equal-to">Not Equal To</option></select> <input type="text" size=4 maxlength=4>.<input type="text" size=2 maxlength=2></p>
+      <p class="statement"><span class="colored-red">Max</span> Value: Turn <select style="font-size: 30px;"><option value="on">On</option><option value="off">Off</option></select> if value is <select style="font-size: 30px;"><option value="greater-than">Greater Than</option><option value="less-than">Less Than</option><option value="equal-to">Equal To</option><option value="not-equal-to">Not Equal To</option></select> <input type="text" size=4 maxlength=4>.<input type="text" size=2 maxlength=2></p>
+      <a href="#" class="button" id="apply-button">Apply</a>
+      <br><br><br>
+      <a href="../manager.html" class="button" id="back-to-manager-button">Back To Manager</a>
+    </div>
+  <script>
+    var helpButton = document.getElementById('help-button');
+    helpButton.addEventListener('click', function(event) {
+      alert("Hello again! If you're wondering how to start controlling your green wall, simply tap the button which says 'Go To Manager', and it will take to you a page filled with pins and their settings. Once you're there, tap the help button again, or you can try to understand the system yourself! For specific problems, contact the people who made me.");
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Green Wall | Cyclic Mode</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../commons.css">
+    <style>
+      .statement {
+        font-size: 25px;
+      } .control-button {
+        font-size: 20px;
+        color: white;
+        margin: 10px 0px;
+        width: 100px;
+        padding: 15px;
+      } #apply-button {
+        font-size: 17.5px;
+        color: white;
+        background-color: rgba(129, 177, 225, 1);
+        padding: 15px;
+        width: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nav'>
+      <div class="text-container">
+        <a class='button' id='help-button' href='#'>help?</a>
+        <p class="space"></p>
+        <p class="datetime">10:35:9132 PM</p>
+        <p class="space"></p>
+        <p class="datetime">April 24th, 2018</p>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <div id="contents">
+      <h1 id="title">Cyclic Mode</h1>
+      <p class="statement">Current State: <span class='colored-red'>Off</span></p>
+      <p class="statement">Current Pin: <span class="colored-green">18</span></p>
+      <br>
+      <p class="statement">Turn <span class="colored-green">on</span> for <input type="text" size=7> seconds.</p>
+      <p class="statement">Then, turn <span class="colored-red">off</span> for <input type="text" size=7> seconds.</p>
+      <a href="#" class="button" id="apply-button">Apply</a>
+      <br>
+      <a href="../manager.html" class="button" id="back-to-manager-button">Back To Manager</a>
+    </div>
+  <script>
+    var helpButton = document.getElementById('help-button');
+    helpButton.addEventListener('click', function(event) {
+      alert("Hello again! If you're wondering how to start controlling your green wall, simply tap the button which says 'Go To Manager', and it will take to you a page filled with pins and their settings. Once you're there, tap the help button again, or you can try to understand the system yourself! For specific problems, contact the people who made me.");
+    });
+  </script>
+  </body>
+</html>
